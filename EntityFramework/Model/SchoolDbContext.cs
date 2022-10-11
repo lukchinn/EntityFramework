@@ -18,7 +18,7 @@ namespace EntityFramework.Model
             var config = new ConfigurationBuilder()
                 .AddJsonFile(Path.Combine(Environment.CurrentDirectory, "appSettings.json"))
                 .Build();
-            optionaBuilder.UseNpgsql(config["Connectionstring:ConStr1"])
+            optionaBuilder.UseNpgsql(config["Connectionstrings:ConStr1"])
                 .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             AppContext.SetSwitch("Npgsql.EnableLegaryTimestampBehavior",true);
         }

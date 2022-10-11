@@ -14,9 +14,9 @@ namespace EntityFramework.Model
         public double amount { get; set; }
         public double vat { get; set; }
         public double net_amount { get; set; }
-       
+        [ForeignKey("custumerid")]
         public int custumerid { get; set; }
-
+        public customer customer { get; set; }
        
     }
    
