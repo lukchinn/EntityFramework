@@ -9,7 +9,7 @@
             {
                 //return;
             }
-            customer cs = new customer();
+           /* customer cs = new customer();
             cs.name1 = "chanachai";
             cs.name2 = "benmat";
             cs.sex = "M";
@@ -47,19 +47,19 @@
             cs5.sex = "F";
             cs5.age = 35;
             db.Customer.Add(cs5);
-            db.SaveChanges();
+            db.SaveChanges();*/
 
             orderh orh = new orderh();
             orh.doc_no = "a112";
-            orh.doc_date = new DateTime(2022,01,01);
+            orh.doc_date = new DateTime(2022,1,1);
             orh.amount = 299;
             orh.vat = 20.93;
             orh.net_amount = 319.93;
-           /* orh.custumerid = 1;*/
+            orh.custumerid = 1;
             db.Orderh.Add(orh);
             db.SaveChanges();
 
-            /*orderh orh2 = new orderh();
+            orderh orh2 = new orderh();
             orh2.doc_no = "a113";
             orh2.doc_date = new DateTime(2022, 01, 02);
             orh2.amount = 400;
@@ -78,7 +78,7 @@
             orh3.custumerid = 3;
             db.Orderh.Add(orh3);
             db.SaveChanges();
-            */
+            
         }
     }
 }

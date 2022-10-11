@@ -10,7 +10,7 @@ namespace EntityFramework.Model
 
         [MaxLength(50)]
         public string doc_no { get; set; }
-        public DateTime? doc_date { get; set; }
+        public DateTime doc_date { get; set; }
         public double amount { get; set; }
         public double vat { get; set; }
         public double net_amount { get; set; }
